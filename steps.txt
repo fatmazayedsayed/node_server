@@ -1,0 +1,10 @@
+create folder that contains your project
+create package.sson using (npm init -y)
+
+install (npm install nodemon -g) to not need to stop and re run the  again , just refresh
+in package.json add   "type": "module", to allow to use Escume script
+
+-------------Dynamic data
+create file data.js-> add some values
+in index.js inject data to read values
+
