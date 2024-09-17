@@ -1,3 +1,5 @@
+implement project for course https://www.youtube.com/watch?v=gyQyk80_upM
+
 create folder that contains your project
 create package.sson using (npm init -y)
 
@@ -7,4 +9,7 @@ in package.json add   "type": "module", to allow to use Escume script
 -------------Dynamic data
 create file data.js-> add some values
 in index.js inject data to read values
+-------------CRUD operations
+create a seperated file that will handle all CRUD operations
+
 
