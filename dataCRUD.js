@@ -1,5 +1,7 @@
 
-import dataDefault from './data.js';
+import  dataDefault from './data.js';
+import { newId } from './data.js';     // Import newId
+
 import * as querystring from 'querystring';  // Import querystring module
 export const createList = ({ id, make, model }) =>
     `<li>
@@ -54,13 +56,12 @@ export const save = (req, res) => {
     // When the request has finished receiving the data
     req.on('end', () => {
         const parsedData = querystring.parse(body);  // Parse the form data using querystring.parse
-        console.log(parsedData);
         const make = parsedData.make;
         const model = parsedData.model;
 
         // Add the new item to your data (assuming you have a data array)
         const newItem = {
-            id: Date.now(),  // Use current timestamp as a unique ID
+            id: newId(),
             make,
             model
         };
@@ -73,3 +74,5 @@ export const save = (req, res) => {
         res.end();
     });
 }
+
+

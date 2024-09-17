@@ -1,5 +1,6 @@
 import { createServer } from 'http';
 import { showList, getItemContent, deleteItem, redirectBack, save, getForm } from './dataCRUD.js'; // Adjust import for ES Modules
+import { totalCount } from './data.js';     // Import newId
 
 const server = createServer((req, res) => {
     const parts = req.url.split('/');
@@ -38,7 +39,7 @@ const server = createServer((req, res) => {
                 const constant = `
                 <html>
                     <body>
-                        <h2>My Data</h2>
+                        <h2>My Data Total Count = ${totalCount()}</h2>
                         ${id ? getItemContent(id) : showList()}
                     </body>
                 </html>
