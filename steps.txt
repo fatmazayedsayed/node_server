@@ -11,5 +11,8 @@ create file data.js-> add some values
 in index.js inject data to read values
 -------------CRUD operations
 create a seperated file that will handle all CRUD operations
+-------------add style sheet
+add the css file->read it in index.js->inject it
+
 
 

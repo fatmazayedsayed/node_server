@@ -1,0 +1,38 @@
+body {
+    font-size: large;
+    /* Adjusts the font size for the entire body */
+    background-color: aquamarine;
+    /* Sets the background color of the page */
+    margin: 0;
+    /* Removes default margin around the body */
+    padding: 0;
+    /* Removes default padding around the body */
+    font-family: Arial, sans-serif;
+    /* Sets a default font family */
+}
+
+h2 {
+    color: darkblue;
+    /* Example: Sets the color of h2 headers */
+}
+
+ul {
+    list-style-type: none;
+    /* Removes bullet points from the list */
+    padding: 0;
+    /* Removes default padding */
+}
+
+li {
+    margin: 10px 0;
+    /* Adds space between list items */
+}
+
+a {
+    text-decoration: none;
+    /* Removes underline from links */
+    color: darkblue;
+    /* Sets the color of links */
+}
+
+ 
